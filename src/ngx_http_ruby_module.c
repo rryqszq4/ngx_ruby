@@ -16,6 +16,8 @@
 #include "ngx_http_ruby_directive.h"
 #include "ngx_http_ruby_handler.h"
 
+#include "ruby/ruby_ngx.h"
+
 static ngx_int_t ngx_http_ruby_init(ngx_conf_t *cf);
 static ngx_int_t ngx_http_ruby_handler_init(ngx_http_core_main_conf_t *cmcf, ngx_http_ruby_main_conf_t *rmcf);
 
@@ -251,6 +253,8 @@ ngx_http_ruby_init_worker(ngx_cycle_t *cycle)
     ruby_init();
     ruby_init_loadpath();
     ruby_script("ngx_ruby");
+
+    Init_ngx();
 
     return NGX_OK;
 }
