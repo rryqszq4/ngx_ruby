@@ -51,7 +51,7 @@ http {
         location /content_by_ruby {
             content_by_ruby "
                 time1 = Time.new
-                Ngx.print('Hello, Ngx_ruby. Current Time : ' + time1.inspect):w
+                Ngx.print('Hello, Ngx_ruby. Current Time : ' + time1.inspect);
             ";
         }
 
@@ -63,7 +63,7 @@ Copyright and License
 ---------------------
 BSD 2-Clause License
 
-Copyright (c) 2017, Quan Zhao
+Copyright (c) 2017, rryqszq4
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
