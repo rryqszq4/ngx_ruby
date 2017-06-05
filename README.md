@@ -55,6 +55,10 @@ http {
             ";
         }
 
+        location /content_by_ruby_file {
+            content_by_ruby_file /ngx_ruby/t/library/hello.rb;
+        }
+
     }
 }
 ```
