@@ -11,7 +11,7 @@
 #include <ngx_conf_file.h>
 #include <nginx.h>
 
-char *ngx_http_ruby_content_phase(ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
+char *ngx_http_ruby_content_file_phase(ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
 char *ngx_http_ruby_content_inline_phase(ngx_conf_t *cf, ngx_command_t *cmd, void *conf);
 
 #endif

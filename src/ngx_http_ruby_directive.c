@@ -8,7 +8,7 @@
 #include "ngx_http_ruby_directive.h"
 
 char *
-ngx_http_ruby_content_phase(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
+ngx_http_ruby_content_file_phase(ngx_conf_t *cf, ngx_command_t *cmd, void *conf)
 {
     ngx_http_ruby_main_conf_t *rmcf;
     ngx_http_ruby_loc_conf_t *rlcf;

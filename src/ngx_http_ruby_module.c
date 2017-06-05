@@ -35,7 +35,7 @@ static ngx_command_t ngx_http_ruby_commands[] = {
     {ngx_string("content_by_ruby_file"),
      NGX_HTTP_MAIN_CONF|NGX_HTTP_SRV_CONF|NGX_HTTP_LOC_CONF|NGX_HTTP_LIF_CONF
         |NGX_CONF_TAKE1,
-     ngx_http_ruby_content_phase,
+     ngx_http_ruby_content_file_phase,
      NGX_HTTP_LOC_CONF_OFFSET,
      0,
      ngx_http_ruby_content_file_handler
